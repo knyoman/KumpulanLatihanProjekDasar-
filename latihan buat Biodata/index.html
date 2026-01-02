@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Identitas Saya - Nyoman Kusuma</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            width: 100%;
+            overflow: hidden;
+            animation: slideIn 0.6s ease-out;
+        }
+
+        @keyframes slideIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 40px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .profile-image {
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .profile-image img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 5px solid #667eea;
+            object-fit: cover;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+            transition: transform 0.3s ease;
+        }
+
+        .profile-image img:hover {
+            transform: scale(1.05);
+        }
+
+        .info-section {
+            padding: 30px 20px;
+        }
+
+        .info-section p {
+            font-size: 1.05em;
+            color: #333;
+            margin: 15px 0;
+            line-height: 1.6;
+        }
+
+        .info-table {
+            width: 100%;
+            margin: 30px 0;
+            border-collapse: collapse;
+        }
+
+        .info-table tr {
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .info-table tr:hover {
+            background-color: #f8f9ff;
+        }
+
+        .info-table th {
+            text-align: left;
+            padding: 15px;
+            background: #f8f9ff;
+            color: #667eea;
+            font-weight: 600;
+            border: none;
+        }
+
+        .info-table th:first-child {
+            border-radius: 8px 0 0 0;
+        }
+
+        .info-table th:last-child {
+            border-radius: 0 8px 0 0;
+        }
+
+        .links-section {
+            padding: 30px 20px;
+            text-align: center;
+            border-top: 2px solid #f0f0f0;
+        }
+
+        .btn {
+            display: inline-block;
+            margin: 10px;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid #667eea;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-secondary {
+            color: #667eea;
+            background: white;
+        }
+
+        .btn-secondary:hover {
+            background: #667eea;
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        @media (max-width: 600px) {
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .profile-image img {
+                width: 200px;
+                height: 200px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>HALO TEMAN-TEMAN!</h1>
+        </div>
+
+        <div class="profile-image">
+            <img src="/nyoman.jpeg" alt="Foto Profil Nyoman Kusuma">
+        </div>
+
+        <div class="info-section">
+            <p style="text-align: center; font-size: 1.3em; color: #667eea; font-weight: 600;">Nama Saya: <strong>Nyoman
+                    Kusuma</strong></p>
+            <p style="text-align: center;">Asal: Ogan Komering Ilir</p>
+            <p style="text-align: center;">Status: Mahasiswa Semester 1</p>
+            <p style="text-align: center; font-weight: 600; color: #764ba2;">Universitas BINA DARMA</p>
+
+            <table class="info-table">
+                <tr>
+                    <th>Kelas</th>
+                    <th>UBD1C</th>
+                </tr>
+                <tr>
+                    <th>NIM</th>
+                    <th>231410049</th>
+                </tr>
+                <tr>
+                    <th>Jurusan</th>
+                    <th>Sistem Informasi</th>
+                </tr>
+            </table>
+        </div>
+
+        <div class="links-section">
+            <a href="https://heylink.me/nyomankusuma/" class="btn btn-primary">Info Lebih Lanjut Tentang Saya</a>
+            <a href="https://www.binadarma.ac.id/" target="_blank" class="btn btn-secondary">Universitas BINA DARMA</a>
+        </div>
+    </div>
+</body>
+
+</html>
