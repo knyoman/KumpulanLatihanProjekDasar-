@@ -10,21 +10,19 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
+  <!-- AOS (Animate On Scroll) CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <!-- My CSS -->
   <link rel="stylesheet" href="style.css" />
   <title>My Portfolio NYOMAN KUSUMA</title>
-  <style>
-    h1 {
-      text-align: center;
-    }
-  </style>
 </head>
 
 <body id="home">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow-sm fixed-top">
     <div class="container">
-      <a class="navbar-brand" href="#">NYOMAN KUSUMA</a>
+      <a class="navbar-brand fw-bold" href="#">NYOMAN KUSUMA</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,12 +36,10 @@
             <a class="nav-link" href="#About">About</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#Galery">Galery</a>
+            <a class="nav-link" href="#Galery">Gallery</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#Contact">Contact</a>
-          </li>
-
           </li>
         </ul>
       </div>
@@ -54,9 +50,9 @@
   <!-- Jumbotron -->
   <section class="jumbotron text-center">
     <img src="img/WhatsApp Image 2023-10-18 at 09.36.31 - Copy.jpeg" alt="nyoman kusuma" width="200"
-      class="rounded-circle img-thumbnail" />
-    <h1 class="display-4">NYOMAN KUSUMA</h1>
-    <h3>Pejuang Bisnis</h3>
+      class="rounded-circle img-thumbnail animate-profile" data-aos="zoom-in" data-aos-duration="1000" />
+    <h1 class="display-4 animate-title" data-aos="fade-up" data-aos-duration="1000">NYOMAN KUSUMA</h1>
+    <h3 class="tagline" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">Pejuang Bisnis</h3>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
       <path fill="#ffff" fill-opacity="1"
         d="M0,192L48,202.7C96,213,192,235,288,218.7C384,203,480,149,576,122.7C672,96,768,96,864,122.7C960,149,1056,203,1152,218.7C1248,235,1344,213,1392,202.7L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
@@ -68,19 +64,21 @@
   <!-- About -->
   <section id="About">
     <div class="container">
-      <div class="row text-center mb-3">
+      <div class="row text-center mb-3" data-aos="fade-down" data-aos-duration="1000">
         <div class="col">
-          <h2>About Me</h2>
+          <h2 class="section-title">About Me</h2>
         </div>
       </div>
       <div class="row justify-content-center fs-5 text-center">
-        <div class="col">
-          <p>Halo perkenalkan nama saya Nyoman Kusuma, saya anak ke-2 dari 3 bersaudara. Saya tinggal di kabupaten
+        <div class="col" data-aos="fade-right" data-aos-duration="1000">
+          <p class="about-text">Halo perkenalkan nama saya Nyoman Kusuma, saya anak ke-2 dari 3 bersaudara. Saya tinggal
+            di kabupaten
             Ogan
             Komering Ilir, Kecamatan Mesuji Makmur. </p>
         </div>
-        <div class="col">
-          <p>Saya sekarang berkuliah di Universitas Bina Darma, masih semester satu, dan mengambil jurusan Sistem
+        <div class="col" data-aos="fade-left" data-aos-duration="1000">
+          <p class="about-text">Saya sekarang berkuliah di Universitas Bina Darma, masih semester satu, dan mengambil
+            jurusan Sistem
             Informasi.</p>
         </div>
       </div>
@@ -96,17 +94,26 @@
   <!-- Projec -->
   <section id="Galery" style="background-color: #e2edff;">
     <div class="container">
-      <div class="row text-center">
+      <div class="row text-center mb-5" data-aos="fade-down" data-aos-duration="1000">
         <div class="col">
-          <h2>My Galery</h2>
+          <h2 class="section-title">My Gallery</h2>
         </div>
       </div>
 
-      <img src="img/WhatsApp Image 2023-10-27 at 14.47.19.jpeg" alt="foto" width="200">
-      <img src="img/WhatsApp Image 2023-10-27 at 14.47.20.jpeg" alt="foto" width="200">
-      <img src="img/WhatsApp Image 2023-10-27 at 14.47.20 (2).jpeg" alt="foto" width="200">
-      <img src="img/WhatsApp Image 2023-10-27 at 14.47.19 (1).jpeg" alt="foto" width="200">
-      <img src="img/WhatsApp Image 2023-10-27 at 14.47.20 (1).jpeg" alt="foto" width="200">
+      <div class="row justify-content-center text-center">
+        <img src="img/WhatsApp Image 2023-10-27 at 14.47.19.jpeg" alt="foto" width="200" class="col-md-3 gallery-img"
+          data-aos="zoom-in" data-aos-duration="800">
+        <img src="img/WhatsApp Image 2023-10-27 at 14.47.20.jpeg" alt="foto" width="200" class="col-md-3 gallery-img"
+          data-aos="zoom-in" data-aos-duration="800" data-aos-delay="100">
+        <img src="img/WhatsApp Image 2023-10-27 at 14.47.20 (2).jpeg" alt="foto" width="200"
+          class="col-md-3 gallery-img" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="200">
+      </div>
+      <div class="row justify-content-center text-center">
+        <img src="img/WhatsApp Image 2023-10-27 at 14.47.19 (1).jpeg" alt="foto" width="200"
+          class="col-md-3 gallery-img" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="300">
+        <img src="img/WhatsApp Image 2023-10-27 at 14.47.20 (1).jpeg" alt="foto" width="200"
+          class="col-md-3 gallery-img" data-aos="zoom-in" data-aos-duration="800" data-aos-delay="400">
+      </div>
     </div>
     </div>
     </div>
@@ -119,29 +126,31 @@
   <!-- Akhir Projec -->
 
   <!-- Contact -->
-  <SECtion id="Contact">
+  <section id="Contact">
     <div class="container">
-      <div class="row text-center mb-3">
+      <div class="row text-center mb-5" data-aos="fade-down" data-aos-duration="1000">
         <div class="col">
-          <h2>Contact Me</h2>
+          <h2 class="section-title">Contact Me</h2>
         </div>
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" data-aos="fade-up" data-aos-duration="1000">
         <div class="col-md-8">
-          <form>
+          <form class="contact-form">
             <div class="mb-3">
               <label for="name" class="form-label">Nama Lengkap</label>
-              <input type="email" class="form-control" id="name" aria-describedby="name">
+              <input type="text" class="form-control form-input" id="name" aria-describedby="name"
+                placeholder="Masukkan nama lengkap">
             </div>
             <div class="mb-3">
               <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="email">
+              <input type="email" class="form-control form-input" id="email" aria-describedby="email"
+                placeholder="Masukkan email">
             </div>
             <div class="mb-3">
-              <label for="Pesen" class="form-label">Pesan</label>
-              <textarea class="form-control" id="Pesan" rows="3"></textarea>
+              <label for="Pesan" class="form-label">Pesan</label>
+              <textarea class="form-control form-input" id="Pesan" rows="4" placeholder="Tulis pesan anda"></textarea>
             </div>
-            <button type="submit" class="btn btn-primary">Kirim</button>
+            <button type="submit" class="btn btn-custom w-100">Kirim Pesan</button>
           </form>
         </div>
       </div>
@@ -151,15 +160,41 @@
         d="M0,160L48,170.7C96,181,192,203,288,224C384,245,480,267,576,266.7C672,267,768,245,864,234.7C960,224,1056,224,1152,192C1248,160,1344,96,1392,64L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z">
       </path>
     </svg>
-  </SECtion>
+  </section>
   <!-- Akhir contact -->
 
   <!-- Footer -->
-  <footer class="bg-primary text-white text-center pb-5">
-    <p>Don't forget to follow my Instagram<a href="https://www.instagram.com/nyoman_kusuma.21/"
-        class="text-white fw-bold">NYOMAN KUSUMA</a></p>
+  <footer class="footer bg-dark text-white text-center py-4">
+    <p class="mb-2">Follow me on Instagram:</p>
+    <a href="https://www.instagram.com/nyoman_kusuma.21/"
+      class="text-white fw-bold instagram-link">@NYOMAN_KUSUMA.21</a>
+    <p class="mt-3 mb-0">© 2024 Nyoman Kusuma. All rights reserved.</p>
   </footer>
   <!-- Akhir Footer -->
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100
+    });
+
+    // Smooth scroll behavior
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+      });
+    });
+  </script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
